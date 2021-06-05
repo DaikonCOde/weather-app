@@ -1,0 +1,57 @@
+.nav-search {
+  width: 100%;
+  @include media(desktop-s) {
+    width: 300px;
+  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $color-primary;
+  padding: 20px;
+  .close-nav {
+    @extend %close-btn;
+  }
+  .nav-form-search {
+    margin: 30px auto;
+    #input-search {
+      @extend %btn;
+      background: transparent;
+      border: 1px solid map-get($color-text, color-gray);
+      outline: none;
+      width: 180px;
+      @include color-text(color-light);
+    }
+    button {
+      @extend %btn;
+      background: $color-alternative;
+      @include color-text(color-light);
+      font-weight: 600;
+      height: 38px;
+      margin: 0 0 0 10px;
+      width: 38px;
+      position: relative;
+      vertical-align: middle;
+      &::before {
+        content: "";
+        position: absolute;
+        top: calc(50% - 10px);
+        left: calc(50% - 10px);
+        background: url("../assets/search-interface-symbol.svg") no-repeat
+          center;
+        background-size: contain;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.nav-search {
+  transition: all 0.5s linear;
+  transform: translate(-100%, 0);
+}
+.nav-active {
+  transform: translate(0, 0);
+}

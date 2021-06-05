@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/cloudy.png" type="image/x-icon">
+  <title>Weather App</title>
+</head>
+<body>
+  <div class="app">
+    <section class="view-time">
+      <div class="view-time-container">
+        <div class="view-time-search">
+          <button class="btn btn-open ">Search for place</button>
+          <button class="btn btn-location" id ="near-by-me"></button>
+        </div>
+        <div class="view-time-body">
+          <div class="view-time-body-icon">
+            <img class="image-temp" src="" alt="">
+          </div>
+          <div class="view-time-body-temp">
+            <span class="degress-temp" id="degress--temp"></span><span class="units">°C</span>
+            <h3 class="type-temp"></h3>
+            <span class="description-temp"></span>
+          </div>
+          <div class="view-time-body-date">
+            <span class="time-day">Today</span> <span class="time-date"></span>
+            <span class="time-location"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="view-more">
+      <div class="last-day-container">
+      </div>
+      <div class="hightlights-container">
+        <h3>Toda'y hightlights.</h3>
+        <div class="hightlights-content">
+          <div class="windStatus">
+            <span class="windStatus-title">Wind Status</span>
+            <div class="windStatus-metrics">
+              <span class="windStatus-value"></span>
+              <span class="windStatus-metric">mph</span>
+            </div>
+            <div class="windStatus-container-compass">
+              <span class="compass-icon"></span>
+              <span class="compass-metric">WS</span>
+            </div>
+          </div>
+          <div class="humidity">
+            <span class="humidity-title">Humidity</span>
+            <div class="humidity-metrics">
+              <span class="humidity-value"></span>
+              <span class="humidity-metric">%</span>
+            </div>
+            <span class="humidity-container-bar">
+              <span class="humidity-bar"></span>
+              <span class="position position-0">0</span>
+              <span class="position position-50">50</span>
+              <span class="position position-100">100</span>
+              <span class="position position-porc">%</span>
+            </span>
+          </div>
+          <div class="visibility">
+            <span class="visibility-title">Visibility</span>
+            <div class="visibility-metrics">
+              <span class="visibility-value"></span>
+              <span class="visibility-metric">miles</span>
+            </div>
+          </div>
+          <div class="air-pressure">
+            <span class="air-pressure-title">Air Pressure</span>
+            <div class="air-pressure-metrics">
+              <span class="air-pressure-value"></span>
+              <span class="air-pressure-metric">mb</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer-site">
+        <p>Create by <a href="https://github.com/DaikonCOde" target="_blank">DaikonCode</a> </p>
+      </footer>
+    </section>
+  </div>
+
+
+  <div class="nav-search">
+    <div class="nav-serch-container">
+      <span class="close-nav"></span>
+      <form class="nav-form-search">
+        <input type="text" placeholder="search location" id="input-search">
+        <button type="button" class="btn btn-search-nav"></button>
+      </form>
+      
+    </div>
+  </div>
+
+  <div class="modal">
+    <div class="modal-container">
+      <span class="close-modal"></span>
+      <h3>Ups!</h3>
+      <p>We can't find your city, retry with another name </p>
+    </div>
+  </div>
+
+
+
+  <div class="overlay loading">
+    <div class="load">
+      <hr/><hr/><hr/><hr/>
+    </div>
+  </div>
+  <script src="./js/index.js" type="module"></script>
+</body>
+</html>

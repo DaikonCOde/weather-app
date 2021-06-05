@@ -1,0 +1,538 @@
+/* Media Queries Mixin
+**********************/
+/* line 2, components/_components.scss */
+.nav-search .nav-form-search #input-search, .nav-search .nav-form-search button, .view-time-search .btn-open, .view-time-search .btn-location {
+  border: none;
+  background: #6e707a;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  padding: 10px 18px;
+  transition: all 0.3s linear; }
+  /* line 9, components/_components.scss */
+  .nav-search .nav-form-search #input-search:hover, .nav-search .nav-form-search button:hover, .view-time-search .btn-open:hover, .view-time-search .btn-location:hover {
+    background: #1e213a; }
+
+/* line 14, components/_components.scss */
+.view-time-body-temp .degress-temp, .view-time-body-temp .type-temp {
+  text-align: center; }
+
+/* line 18, components/_components.scss */
+.view-time-body-date .time-day, .view-time-body-date .time-date, .view-time-body-date .time-location {
+  color: #88869d;
+  font-size: 16px;
+  text-align: center;
+  position: relative; }
+
+/* line 25, components/_components.scss */
+.modal .close-modal, .nav-search .close-nav {
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: url("../assets/cancel.svg") no-repeat center;
+  background-size: contain;
+  margin: 0 0 0 auto; }
+
+/* line 37, components/_components.scss */
+.hightlights-container .windStatus, .hightlights-container .humidity, .hightlights-container .visibility, .hightlights-container .air-pressure {
+  width: 100%;
+  height: auto;
+  margin: 30px auto;
+  background: #1e213a;
+  padding: 20px; }
+  /* line 43, components/_components.scss */
+  .hightlights-container .windStatus .windStatus-title, .hightlights-container .humidity .windStatus-title, .hightlights-container .visibility .windStatus-title, .hightlights-container .air-pressure .windStatus-title, .hightlights-container .windStatus .humidity-title, .hightlights-container .humidity .humidity-title, .hightlights-container .visibility .humidity-title, .hightlights-container .air-pressure .humidity-title, .hightlights-container .windStatus .visibility-title, .hightlights-container .humidity .visibility-title, .hightlights-container .visibility .visibility-title, .hightlights-container .air-pressure .visibility-title, .hightlights-container .windStatus .air-pressure-title, .hightlights-container .humidity .air-pressure-title, .hightlights-container .visibility .air-pressure-title, .hightlights-container .air-pressure .air-pressure-title {
+    display: block;
+    text-align: center;
+    color: #e7e7eb; }
+  /* line 48, components/_components.scss */
+  .hightlights-container .windStatus .windStatus-metrics, .hightlights-container .humidity .windStatus-metrics, .hightlights-container .visibility .windStatus-metrics, .hightlights-container .air-pressure .windStatus-metrics, .hightlights-container .windStatus .humidity-metrics, .hightlights-container .humidity .humidity-metrics, .hightlights-container .visibility .humidity-metrics, .hightlights-container .air-pressure .humidity-metrics, .hightlights-container .windStatus .visibility-metrics, .hightlights-container .humidity .visibility-metrics, .hightlights-container .visibility .visibility-metrics, .hightlights-container .air-pressure .visibility-metrics, .hightlights-container .windStatus .air-pressure-metrics, .hightlights-container .humidity .air-pressure-metrics, .hightlights-container .visibility .air-pressure-metrics, .hightlights-container .air-pressure .air-pressure-metrics {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  /* line 54, components/_components.scss */
+  .hightlights-container .windStatus .windStatus-value, .hightlights-container .humidity .windStatus-value, .hightlights-container .visibility .windStatus-value, .hightlights-container .air-pressure .windStatus-value, .hightlights-container .windStatus .humidity-value, .hightlights-container .humidity .humidity-value, .hightlights-container .visibility .humidity-value, .hightlights-container .air-pressure .humidity-value, .hightlights-container .windStatus .visibility-value, .hightlights-container .humidity .visibility-value, .hightlights-container .visibility .visibility-value, .hightlights-container .air-pressure .visibility-value, .hightlights-container .windStatus .air-pressure-value, .hightlights-container .humidity .air-pressure-value, .hightlights-container .visibility .air-pressure-value, .hightlights-container .air-pressure .air-pressure-value {
+    color: #e7e7eb;
+    font-size: 48px;
+    font-weight: 700; }
+  /* line 59, components/_components.scss */
+  .hightlights-container .windStatus .windStatus-metric, .hightlights-container .humidity .windStatus-metric, .hightlights-container .visibility .windStatus-metric, .hightlights-container .air-pressure .windStatus-metric, .hightlights-container .windStatus .humidity-metric, .hightlights-container .humidity .humidity-metric, .hightlights-container .visibility .humidity-metric, .hightlights-container .air-pressure .humidity-metric, .hightlights-container .windStatus .visibility-metric, .hightlights-container .humidity .visibility-metric, .hightlights-container .visibility .visibility-metric, .hightlights-container .air-pressure .visibility-metric, .hightlights-container .windStatus .air-pressure-metric, .hightlights-container .humidity .air-pressure-metric, .hightlights-container .visibility .air-pressure-metric, .hightlights-container .air-pressure .air-pressure-metric {
+    color: #e7e7eb;
+    font-size: 24px;
+    display: inline-block;
+    margin: 0 0 0 5px; }
+
+/* line 1, components/_global.scss */
+body {
+  margin: 0;
+  padding: 0; }
+
+/* line 5, components/_global.scss */
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif; }
+
+/* line 1, templates/_overlay.scss */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #100e1d;
+  z-index: 4;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s linear;
+  justify-content: center;
+  align-items: center; }
+
+/* line 17, templates/_overlay.scss */
+.modal {
+  width: 300px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  height: auto;
+  background: #e7e7eb;
+  position: fixed;
+  top: calc(50% - 75px);
+  left: calc(50% - 150px);
+  z-index: 3;
+  visibility: hidden;
+  opacity: 0; }
+  /* line 29, templates/_overlay.scss */
+  .modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+  /* line 35, templates/_overlay.scss */
+  .modal .close-modal {
+    background-image: url("../assets/cancel -dark.svg"); }
+  /* line 39, templates/_overlay.scss */
+  .modal h3 {
+    font-size: 24px;
+    text-align: center; }
+  /* line 43, templates/_overlay.scss */
+  .modal p {
+    text-align: center; }
+
+/* line 48, templates/_overlay.scss */
+.loading {
+  visibility: visible;
+  opacity: 1; }
+
+/* line 53, templates/_overlay.scss */
+.load {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*change these sizes to fit into your project*/
+  width: 100px;
+  height: 100px; }
+
+/* line 62, templates/_overlay.scss */
+.load hr {
+  border: 0;
+  margin: 0;
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  border-radius: 50%;
+  animation: spin 2s ease infinite; }
+
+/* line 72, templates/_overlay.scss */
+.load :first-child {
+  background: #19a68c;
+  animation-delay: -1.5s; }
+
+/* line 76, templates/_overlay.scss */
+.load :nth-child(2) {
+  background: #f63d3a;
+  animation-delay: -1s; }
+
+/* line 80, templates/_overlay.scss */
+.load :nth-child(3) {
+  background: #fda543;
+  animation-delay: -0.5s; }
+
+/* line 84, templates/_overlay.scss */
+.load :last-child {
+  background: #193b48; }
+
+@keyframes spin {
+  0%,
+  100% {
+    transform: translate(0); }
+  25% {
+    transform: translate(160%); }
+  50% {
+    transform: translate(160%, 160%); }
+  75% {
+    transform: translate(0, 160%); } }
+/* line 1, templates/_nav-search.scss */
+.nav-search {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #1e213a;
+  padding: 20px; }
+  @media only screen and (min-width: 992px) {
+    /* line 1, templates/_nav-search.scss */
+    .nav-search {
+      width: 300px; } }
+  /* line 16, templates/_nav-search.scss */
+  .nav-search .nav-form-search {
+    margin: 30px auto; }
+    /* line 18, templates/_nav-search.scss */
+    .nav-search .nav-form-search #input-search {
+      background: transparent;
+      border: 1px solid #88869d;
+      outline: none;
+      width: 180px;
+      color: #e7e7eb; }
+    /* line 26, templates/_nav-search.scss */
+    .nav-search .nav-form-search button {
+      background: #3c47e9;
+      color: #e7e7eb;
+      font-weight: 600;
+      height: 38px;
+      margin: 0 0 0 10px;
+      width: 38px;
+      position: relative;
+      vertical-align: middle; }
+      /* line 36, templates/_nav-search.scss */
+      .nav-search .nav-form-search button::before {
+        content: "";
+        position: absolute;
+        top: calc(50% - 10px);
+        left: calc(50% - 10px);
+        background: url("../assets/search-interface-symbol.svg") no-repeat center;
+        background-size: contain;
+        width: 20px;
+        height: 20px; }
+
+/* line 51, templates/_nav-search.scss */
+.nav-search {
+  transition: all 0.5s linear;
+  transform: translate(-100%, 0); }
+
+/* line 55, templates/_nav-search.scss */
+.nav-active {
+  transform: translate(0, 0); }
+
+@media only screen and (min-width: 992px) {
+  /* line 1, templates/_time-view.scss */
+  .app {
+    display: flex; } }
+
+/* line 7, templates/_time-view.scss */
+.view-time {
+  width: 100%;
+  background: #1e213a;
+  min-height: 100vh; }
+  @media only screen and (min-width: 992px) {
+    /* line 7, templates/_time-view.scss */
+    .view-time {
+      width: 300px;
+      min-width: 300px; } }
+  /* line 15, templates/_time-view.scss */
+  .view-time-search {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px; }
+    @media only screen and (min-width: 992px) {
+      /* line 15, templates/_time-view.scss */
+      .view-time-search {
+        padding: 40px 40px 0; } }
+    /* line 22, templates/_time-view.scss */
+    .view-time-search .btn-open {
+      color: #e7e7eb;
+      font-weight: 600; }
+    /* line 27, templates/_time-view.scss */
+    .view-time-search .btn-location {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      padding: 5px; }
+      /* line 33, templates/_time-view.scss */
+      .view-time-search .btn-location::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: url("../assets/location.svg") no-repeat center;
+        background-size: contain;
+        top: calc(50% - 10px);
+        left: calc(50% - 10px); }
+  /* line 45, templates/_time-view.scss */
+  .view-time-body {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    /* line 52, templates/_time-view.scss */
+    .view-time-body::before {
+      content: "";
+      position: absolute;
+      width: 600px;
+      height: 320px;
+      top: 0;
+      opacity: 0.1;
+      background: url("../assets/Cloud-background.png") no-repeat center;
+      background-size: contain; }
+    /* line 62, templates/_time-view.scss */
+    .view-time-body-icon {
+      width: 150px;
+      height: 130px;
+      margin: 50px auto 30px;
+      position: relative; }
+      /* line 67, templates/_time-view.scss */
+      .view-time-body-icon img {
+        width: 100%; }
+    /* line 71, templates/_time-view.scss */
+    .view-time-body-temp {
+      position: relative; }
+      /* line 73, templates/_time-view.scss */
+      .view-time-body-temp .degress-temp {
+        font-size: 144px;
+        line-height: 100px;
+        color: #e7e7eb;
+        font-weight: 700; }
+      /* line 80, templates/_time-view.scss */
+      .view-time-body-temp .units {
+        color: #88869d;
+        font-size: 48px;
+        margin: 0 0 0 10px;
+        display: inline-block;
+        font-weight: 700; }
+      /* line 87, templates/_time-view.scss */
+      .view-time-body-temp .type-temp {
+        color: #e7e7eb;
+        font-size: 36px;
+        margin: 36px 0 10px 0; }
+      /* line 93, templates/_time-view.scss */
+      .view-time-body-temp .description-temp {
+        color: #a09fb1;
+        text-align: center;
+        display: block;
+        margin: 0 auto 20px; }
+    /* line 100, templates/_time-view.scss */
+    .view-time-body-date {
+      position: relative;
+      margin: 0 0 50px 0; }
+      /* line 105, templates/_time-view.scss */
+      .view-time-body-date .time-day::before {
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 5px;
+        background: #6e707a;
+        border-radius: 50%;
+        top: calc(50% - 2.5px);
+        right: -15px; }
+      /* line 116, templates/_time-view.scss */
+      .view-time-body-date .time-date {
+        margin: 0 0 0 20px; }
+      /* line 120, templates/_time-view.scss */
+      .view-time-body-date .time-location {
+        display: block;
+        margin: 20px auto 0; }
+
+/* line 1, templates/_more.scss */
+.view-more {
+  background: #100e1d;
+  padding: 20px; }
+  @media only screen and (min-width: 992px) {
+    /* line 1, templates/_more.scss */
+    .view-more {
+      width: 100%;
+      padding: 50px 100px;
+      height: 100vh;
+      overflow-y: scroll; } }
+  /* line 10, templates/_more.scss */
+  .view-more .last-day-container {
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    @media only screen and (min-width: 992px) {
+      /* line 10, templates/_more.scss */
+      .view-more .last-day-container {
+        padding: 0;
+        justify-content: space-around; } }
+    /* line 19, templates/_more.scss */
+    .view-more .last-day-container .last-day {
+      background: #1e213a;
+      padding: 15px;
+      width: 130px;
+      margin: 20px 0;
+      height: auto; }
+      @media only screen and (min-width: 425px) {
+        /* line 19, templates/_more.scss */
+        .view-more .last-day-container .last-day {
+          width: 150px; } }
+      @media only screen and (min-width: 992px) {
+        /* line 19, templates/_more.scss */
+        .view-more .last-day-container .last-day {
+          width: 170px; } }
+      /* line 31, templates/_more.scss */
+      .view-more .last-day-container .last-day .date-name {
+        color: #e7e7eb;
+        text-align: center;
+        font-weight: 600;
+        display: block; }
+      /* line 38, templates/_more.scss */
+      .view-more .last-day-container .last-day .image-date {
+        width: 80px;
+        display: block;
+        height: 80px;
+        margin: 10px auto; }
+      /* line 44, templates/_more.scss */
+      .view-more .last-day-container .last-day .description-time {
+        color: #e7e7eb;
+        text-align: center;
+        display: block;
+        margin: 0 auto 20px; }
+      /* line 50, templates/_more.scss */
+      .view-more .last-day-container .last-day .container-min-max {
+        display: flex;
+        justify-content: space-between; }
+      /* line 54, templates/_more.scss */
+      .view-more .last-day-container .last-day .max-temp-last-day {
+        color: #e7e7eb; }
+      /* line 58, templates/_more.scss */
+      .view-more .last-day-container .last-day .min-temp-last-day {
+        color: #88869d; }
+
+/* line 66, templates/_more.scss */
+.view-more::-webkit-scrollbar {
+  width: 8px;
+  background: #100e1d; }
+
+/* line 70, templates/_more.scss */
+.view-more::-webkit-scrollbar-thumb {
+  width: 8px;
+  border-radius: 12px;
+  box-shadow: 0 0 2px #ffffff30;
+  background: #1e213a; }
+
+/* line 1, templates/_hightlight.scss */
+.hightlights-container {
+  margin: 20px auto 0; }
+  /* line 3, templates/_hightlight.scss */
+  .hightlights-container h3 {
+    color: #e7e7eb;
+    font-size: 24px; }
+  @media only screen and (min-width: 992px) {
+    /* line 7, templates/_hightlight.scss */
+    .hightlights-container .hightlights-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; } }
+  @media only screen and (min-width: 992px) {
+    /* line 14, templates/_hightlight.scss */
+    .hightlights-container .windStatus {
+      width: 45%; } }
+  /* line 31, templates/_hightlight.scss */
+  .hightlights-container .windStatus-container-compass {
+    margin: 50px auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    /* line 36, templates/_hightlight.scss */
+    .hightlights-container .windStatus-container-compass .compass-icon {
+      width: 30px;
+      height: 30px;
+      background: rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      display: block;
+      position: relative; }
+      /* line 43, templates/_hightlight.scss */
+      .hightlights-container .windStatus-container-compass .compass-icon::before {
+        content: "";
+        position: absolute;
+        width: 15px;
+        background: url("../assets/compass.svg") no-repeat center;
+        background-size: contain;
+        height: 15px;
+        left: calc(50% - 7.5px);
+        top: calc(50% - 7.5px);
+        transform: rotate(-45deg); }
+    /* line 55, templates/_hightlight.scss */
+    .hightlights-container .windStatus-container-compass .compass-metric {
+      display: block;
+      color: #e7e7eb;
+      margin: 0 0 0 10px; }
+  @media only screen and (min-width: 992px) {
+    /* line 62, templates/_hightlight.scss */
+    .hightlights-container .humidity {
+      width: 45%; } }
+  /* line 79, templates/_hightlight.scss */
+  .hightlights-container .humidity-container-bar {
+    display: block;
+    margin: 50px auto 20px;
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    position: relative;
+    background: #e7e7eb; }
+    /* line 87, templates/_hightlight.scss */
+    .hightlights-container .humidity-container-bar .humidity-bar {
+      display: block;
+      position: relative;
+      height: 10px;
+      width: 83%;
+      background: #ffec65;
+      border-radius: 10px; }
+    /* line 95, templates/_hightlight.scss */
+    .hightlights-container .humidity-container-bar .position {
+      position: absolute;
+      font-size: 12px;
+      color: #a09fb1;
+      top: -20px; }
+    /* line 101, templates/_hightlight.scss */
+    .hightlights-container .humidity-container-bar .position-0 {
+      left: 0; }
+    /* line 104, templates/_hightlight.scss */
+    .hightlights-container .humidity-container-bar .position-50 {
+      left: calc(50% - 5px); }
+    /* line 107, templates/_hightlight.scss */
+    .hightlights-container .humidity-container-bar .position-100 {
+      right: 0; }
+    /* line 110, templates/_hightlight.scss */
+    .hightlights-container .humidity-container-bar .position-porc {
+      right: 0;
+      top: unset;
+      bottom: -20px; }
+  @media only screen and (min-width: 992px) {
+    /* line 117, templates/_hightlight.scss */
+    .hightlights-container .visibility {
+      width: 45%; } }
+  @media only screen and (min-width: 992px) {
+    /* line 136, templates/_hightlight.scss */
+    .hightlights-container .air-pressure {
+      width: 45%; } }
+
+/* line 1, templates/_footer.scss */
+.footer-site {
+  margin: 50px auto 0; }
+  /* line 3, templates/_footer.scss */
+  .footer-site p {
+    color: #a09fb1;
+    text-align: center;
+    font-size: 14px; }
+    /* line 7, templates/_footer.scss */
+    .footer-site p a {
+      color: #a09fb1;
+      transition: all 0.3s linear; }
+      /* line 10, templates/_footer.scss */
+      .footer-site p a:hover {
+        color: #e7e7eb; }

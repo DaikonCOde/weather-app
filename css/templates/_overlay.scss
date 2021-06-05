@@ -1,0 +1,102 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $color-secondary;
+  z-index: 4;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s linear;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 300px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  height: auto;
+  background: map-get($color-text, color-light);
+  position: fixed;
+  top: calc(50% - 75px);
+  left: calc(50% - 150px);
+  z-index: 3;
+  visibility: hidden;
+  opacity: 0;
+  &-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .close-modal {
+    @extend %close-btn;
+    background-image: url("../assets/cancel\ -dark.svg");
+  }
+  h3 {
+    @include font-size(title);
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+}
+
+.loading {
+  visibility: visible;
+  opacity: 1;
+}
+
+.load {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*change these sizes to fit into your project*/
+  width: 100px;
+  height: 100px;
+}
+.load hr {
+  border: 0;
+  margin: 0;
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  border-radius: 50%;
+  animation: spin 2s ease infinite;
+}
+
+.load :first-child {
+  background: #19a68c;
+  animation-delay: -1.5s;
+}
+.load :nth-child(2) {
+  background: #f63d3a;
+  animation-delay: -1s;
+}
+.load :nth-child(3) {
+  background: #fda543;
+  animation-delay: -0.5s;
+}
+.load :last-child {
+  background: #193b48;
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(160%);
+  }
+  50% {
+    transform: translate(160%, 160%);
+  }
+  75% {
+    transform: translate(0, 160%);
+  }
+}

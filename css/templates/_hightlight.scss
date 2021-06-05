@@ -1,0 +1,154 @@
+.hightlights-container {
+  margin: 20px auto 0;
+  h3 {
+    @include color-text(color-light);
+    @include font-size(title);
+  }
+  .hightlights-content {
+    @include media(desktop-s) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  .windStatus {
+    @extend %hightlights;
+    @include media(desktop-s) {
+      width: 45%;
+    }
+    &-title {
+      @extend %hightlights-title;
+    }
+    &-metrics {
+      @extend %hightlights-metrics;
+    }
+    &-value {
+      @extend %hightlights-value;
+    }
+    &-metric {
+      @extend %hightlights-metric;
+    }
+    &-container-compass {
+      margin: 50px auto 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .compass-icon {
+        width: 30px;
+        height: 30px;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        display: block;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 15px;
+          background: url("../assets/compass.svg") no-repeat center;
+          background-size: contain;
+          height: 15px;
+          left: calc(50% - 7.5px);
+          top: calc(50% - 7.5px);
+          transform: rotate(-45deg);
+        }
+      }
+      .compass-metric {
+        display: block;
+        @include color-text(color-light);
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+  .humidity {
+    @extend %hightlights;
+    @include media(desktop-s) {
+      width: 45%;
+    }
+    &-title {
+      @extend %hightlights-title;
+    }
+    &-metrics {
+      @extend %hightlights-metrics;
+    }
+    &-value {
+      @extend %hightlights-value;
+    }
+    &-metric {
+      @extend %hightlights-metric;
+    }
+    &-container-bar {
+      display: block;
+      margin: 50px auto 20px;
+      width: 100%;
+      height: 10px;
+      border-radius: 10px;
+      position: relative;
+      background: map-get($color-text, color-light);
+      .humidity-bar {
+        display: block;
+        position: relative;
+        height: 10px;
+        width: 83%;
+        background: #ffec65;
+        border-radius: 10px;
+      }
+      .position {
+        position: absolute;
+        font-size: 12px;
+        @include color-text(color-gray-light);
+        top: -20px;
+      }
+      .position-0 {
+        left: 0;
+      }
+      .position-50 {
+        left: calc(50% - 5px);
+      }
+      .position-100 {
+        right: 0;
+      }
+      .position-porc {
+        right: 0;
+        top: unset;
+        bottom: -20px;
+      }
+    }
+  }
+  .visibility {
+    @extend %hightlights;
+    @include media(desktop-s) {
+      width: 45%;
+    }
+    &-title {
+      @extend %hightlights-title;
+    }
+    &-metrics {
+      @extend %hightlights-metrics;
+    }
+    &-value {
+      @extend %hightlights-value;
+    }
+    &-metric {
+      @extend %hightlights-metric;
+    }
+  }
+
+  .air-pressure {
+    @extend %hightlights;
+    @include media(desktop-s) {
+      width: 45%;
+    }
+    &-title {
+      @extend %hightlights-title;
+    }
+    &-metrics {
+      @extend %hightlights-metrics;
+    }
+    &-value {
+      @extend %hightlights-value;
+    }
+    &-metric {
+      @extend %hightlights-metric;
+    }
+  }
+}

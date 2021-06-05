@@ -1,0 +1,75 @@
+.view-more {
+  background: $color-secondary;
+  padding: 20px;
+  @include media(desktop-s) {
+    width: 100%;
+    padding: 50px 100px;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+  .last-day-container {
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include media(desktop-s) {
+      padding: 0;
+      justify-content: space-around;
+    }
+    .last-day {
+      background: $color-primary;
+      padding: 15px;
+      width: 130px;
+      margin: 20px 0;
+      height: auto;
+      @include media(movil-l) {
+        width: 150px;
+      }
+      @include media(desktop-s) {
+        width: 170px;
+      }
+      .date-name {
+        @include color-text(color-light);
+        @include font-size(type-temp);
+        text-align: center;
+        font-weight: 600;
+        display: block;
+      }
+      .image-date {
+        width: 80px;
+        display: block;
+        height: 80px;
+        margin: 10px auto;
+      }
+      .description-time {
+        @include color-text(color-light);
+        text-align: center;
+        display: block;
+        margin: 0 auto 20px;
+      }
+      .container-min-max {
+        display: flex;
+        justify-content: space-between;
+      }
+      .max-temp-last-day {
+        @include color-text(color-light);
+        @include font-size(type-temp);
+      }
+      .min-temp-last-day {
+        @include color-text(color-gray);
+        @include font-size(type-temp);
+      }
+    }
+  }
+}
+
+.view-more::-webkit-scrollbar {
+  width: 8px;
+  background: $color-secondary;
+}
+.view-more::-webkit-scrollbar-thumb {
+  width: 8px;
+  border-radius: 12px;
+  box-shadow: 0 0 2px #ffffff30;
+  background: $color-primary;
+}

@@ -1,0 +1,36 @@
+// colors
+
+$color-primary: #1e213a;
+$color-secondary: #100e1d;
+$color-alternative: #3c47e9;
+
+$background-gray: #6e707a;
+
+// color text
+$color-text: (
+  color-light: #e7e7eb,
+  color-gray-light: #a09fb1,
+  color-gray: #88869d,
+);
+
+// font size
+
+$font-size: (
+  tem: 144px,
+  stat: 64px,
+  c: 48px,
+  time: 36px,
+  title: 24px,
+  title_cards: 18px,
+  type_temp: 16px,
+);
+
+$line-height: (
+  tem: 100px,
+  stat: 75px,
+  c: 56px,
+  time: 42px,
+  title: 28px,
+  title_cards: 18px,
+  type_temp: 18px,
+);
