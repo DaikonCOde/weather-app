@@ -4,7 +4,7 @@ class OpenConexion {
   constructor () {
     this.urlAPI = {
       baseURL: "https://api.openweathermap.org/data/2.5/",
-      parameters: "&units=metric&lang=es&appid=373090a3c994dd0879e7ee241a9d6848",
+      parameters: "&units=metric&appid=373090a3c994dd0879e7ee241a9d6848",
     };
     this.typeSearch = {
       find: "find?",

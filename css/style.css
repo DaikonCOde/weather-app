@@ -360,15 +360,14 @@ body {
   /* line 10, templates/_more.scss */
   .view-more .last-day-container {
     display: flex;
-    padding: 30px;
+    padding: 30px 10px;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-around; }
     @media only screen and (min-width: 992px) {
       /* line 10, templates/_more.scss */
       .view-more .last-day-container {
-        padding: 0;
-        justify-content: space-around; } }
-    /* line 19, templates/_more.scss */
+        padding: 0; } }
+    /* line 18, templates/_more.scss */
     .view-more .last-day-container .last-day {
       background: #1e213a;
       padding: 15px;
@@ -376,48 +375,48 @@ body {
       margin: 20px 0;
       height: auto; }
       @media only screen and (min-width: 425px) {
-        /* line 19, templates/_more.scss */
+        /* line 18, templates/_more.scss */
         .view-more .last-day-container .last-day {
           width: 150px; } }
       @media only screen and (min-width: 992px) {
-        /* line 19, templates/_more.scss */
+        /* line 18, templates/_more.scss */
         .view-more .last-day-container .last-day {
           width: 170px; } }
-      /* line 31, templates/_more.scss */
+      /* line 30, templates/_more.scss */
       .view-more .last-day-container .last-day .date-name {
         color: #e7e7eb;
         text-align: center;
         font-weight: 600;
         display: block; }
-      /* line 38, templates/_more.scss */
+      /* line 37, templates/_more.scss */
       .view-more .last-day-container .last-day .image-date {
         width: 80px;
         display: block;
         height: 80px;
         margin: 10px auto; }
-      /* line 44, templates/_more.scss */
+      /* line 43, templates/_more.scss */
       .view-more .last-day-container .last-day .description-time {
         color: #e7e7eb;
         text-align: center;
         display: block;
         margin: 0 auto 20px; }
-      /* line 50, templates/_more.scss */
+      /* line 49, templates/_more.scss */
       .view-more .last-day-container .last-day .container-min-max {
         display: flex;
         justify-content: space-between; }
-      /* line 54, templates/_more.scss */
+      /* line 53, templates/_more.scss */
       .view-more .last-day-container .last-day .max-temp-last-day {
         color: #e7e7eb; }
-      /* line 58, templates/_more.scss */
+      /* line 57, templates/_more.scss */
       .view-more .last-day-container .last-day .min-temp-last-day {
         color: #88869d; }
 
-/* line 66, templates/_more.scss */
+/* line 65, templates/_more.scss */
 .view-more::-webkit-scrollbar {
   width: 8px;
   background: #100e1d; }
 
-/* line 70, templates/_more.scss */
+/* line 69, templates/_more.scss */
 .view-more::-webkit-scrollbar-thumb {
   width: 8px;
   border-radius: 12px;
